@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csabai Áron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header><h1>Űrlap</h1></header>
+        <nav><ul>
+            <li><a href="index.html">menü</a></li>
+            <li><a href="index.html">menü</a></li>
+            <li><a href="index.html">menü</a></li>
+        </ul></nav>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Személyes adatok</legend>
+                    <div class="block">
+                        <label for="nev">Név</label>
+                        <input type="text" name="nev" id="nev" placeholder="Vezetéknév Keresztnév">
+                    </div>
+                    <div class="block">
+                        <label for="psw">Jelszó</label>
+                        <input type="password" name="psw" id="psw">
+                    </div>
+                    <div class="block">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Nem</legend>
+                    <div class="block">
+                        <label for="ffi">Férfi</label> <input type="radio" name="nem" id="ffi" checked>
+                    </div>
+                    <div class="block"><label for="no">Nő</label> <input type="radio" name="nem" id="no"></div>
+                </fieldset>
+                <fieldset>
+                    <legend>Hobbi- többet is kifelölhetsz</legend>
+                    <label for="bic">Bicajozás</label> <input type="checkbox" name="nem" id="bic">
+                    <label for="foto">Fotózás</label> <input type="checkbox" name="nem" id="foto">
+                    <label for="zene">Zenélés</label> <input type="checkbox" name="nem" id="zene">
+                </fieldset>
+                <fieldset>
+                    <legend>Születési dátum</legend>
+                    <div class="block">
+                        <label for="dt">Születési dátum</label>
+                        <input type="date" name="dt" id="dt">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>szam valasztas</legend>
+                    <div class="block">
+                        <label for="szam">Szam (1 es 10 között):</label>
+                        <input type="number" min="1" max="10" name="szam" id="szam">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Tovabbi info</legend>
+                    <div class="block">
+                        <label for="iras">iras</label>
+                        <textarea name="iras" id="iras" rows="10" cols="10"></textarea>
+                    </div>
+
+                </fieldset>
+                <div class="block">
+                    <input type="submit" value="Küldes">
+                </div>
+            </form>
+        </article>
+
+        <footer><p>Csabai Áron</p></footer>
+    </main>
+</body>
+</html>
